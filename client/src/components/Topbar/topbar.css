@@ -15,6 +15,10 @@
     color: white;
     cursor: pointer;
 }
+
+.logoLink{
+    text-decoration: none;
+}
 .topbarLeft{
     flex: 3;
 }

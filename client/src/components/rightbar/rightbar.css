@@ -121,3 +121,21 @@ font-weight: 300;
     font-size: 14px;
     font-weight: 300;
 }
+
+.followBtn{
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+    border: none;
+    background-color: #1872f2;
+    color:#fff;
+    border-radius: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.followBtn:focus{
+    outline: none;
+}

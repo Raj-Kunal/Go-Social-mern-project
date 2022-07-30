@@ -15,6 +15,8 @@ import { Users } from "../../dummydata"
 
 
 function Sidebar() {
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER
+
     return (
         <div className='sidebar'>
             <div className="sidebarWrapper">
@@ -63,11 +65,10 @@ function Sidebar() {
                 <ul className="sidebarFriendList">
                     {Users.map((user) => (
                         <li key={user.id} className="sidebarFriend">
-                            <img src={user.profilePicture} alt="" className="sidebarFriendImg" />
+                            <img src={ PF + user.profilePicture } alt="" className="sidebarFriendImg" />
                             <span className="sidebarFriendName">{user.username}</span>
                         </li>
                     ))}
-
                 </ul>
             </div>
         </div>
